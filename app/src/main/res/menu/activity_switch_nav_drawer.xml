@@ -17,6 +17,10 @@
             android:icon="@drawable/ic_menu_slideshow"
             android:title="العملاء" />
         <item
+            android:id="@+id/nav_admin"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="مدير" />
+        <item
             android:id="@+id/nav_report_sell"
             android:icon="@drawable/ic_menu_manage"
             android:title="تقارير مبيعات" />
