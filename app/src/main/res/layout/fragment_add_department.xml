@@ -17,6 +17,7 @@
             android:layout_height="wrap_content"
             android:text="إضافه قسم جديد"
             android:textColor="#fff"
+            android:textSize="24sp"
             android:gravity="center"
             android:layout_centerVertical="true"/>
 
@@ -33,6 +34,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="اسم القسم"
+        android:textSize="24sp"
         android:layout_marginTop="30dp"
         android:layout_marginStart="13dp"
         android:layout_marginEnd="13dp"/>
@@ -41,6 +43,7 @@
         android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:text="حفظ"
+        android:textSize="24sp"
         android:layout_marginTop="20dp"
         android:gravity="center"
         android:paddingStart="100dp"
