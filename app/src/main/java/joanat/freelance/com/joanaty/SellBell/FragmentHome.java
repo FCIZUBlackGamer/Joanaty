@@ -37,5 +37,8 @@ public class FragmentHome extends Fragment {
     public void onStart() {
         super.onStart();
 
+        productInBellSellList.add(new ProductInBellSell());
+        adapter = new SellBellAdapter(getActivity(), productInBellSellList);
+        recyclerView.setAdapter(adapter);
     }
 }

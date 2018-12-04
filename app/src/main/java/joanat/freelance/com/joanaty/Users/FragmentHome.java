@@ -36,6 +36,8 @@ public class FragmentHome extends Fragment {
     @Override
     public void onStart() {
         super.onStart();
-
+        userList.add(new User(1,1,"Mo'men","123456","","12:13 Am"));
+        adapter = new UserAdapter(getActivity(), userList);
+        recyclerView.setAdapter(adapter);
     }
 }

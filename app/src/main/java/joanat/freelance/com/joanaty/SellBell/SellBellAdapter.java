@@ -59,8 +59,8 @@ public class SellBellAdapter extends RecyclerView.Adapter<SellBellAdapter.Vholde
     @Override
     public void onBindViewHolder(@NonNull Vholder holder, final int position) {
 
-        holder.name.setText(agents.get(position).getName());
-        holder.barcode.setText(agents.get(position).getBarcode());
+        holder.name.setText(agents.get(position).getName()+"");
+        holder.barcode.setText(agents.get(position).getBarcode()+"");
         holder.price.setText(agents.get(position).getPrice()+"");
         holder.total.setText(agents.get(position).getTotal() + "");
         holder.discount.setText(agents.get(position).getDiscount() + "");
@@ -200,7 +200,7 @@ public class SellBellAdapter extends RecyclerView.Adapter<SellBellAdapter.Vholde
             super(itemView);
             barcode = itemView.findViewById(R.id.barcode);
             amount = itemView.findViewById(R.id.amount);
-            name = itemView.findViewById(R.id.name);
+            name = itemView.findViewById(R.id.product_name);
             discount = itemView.findViewById(R.id.discount);
             sell_type = itemView.findViewById(R.id.sell_type);
             price = itemView.findViewById(R.id.price);

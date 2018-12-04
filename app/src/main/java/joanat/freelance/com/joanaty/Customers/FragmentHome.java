@@ -36,6 +36,8 @@ public class FragmentHome extends Fragment {
     @Override
     public void onStart() {
         super.onStart();
-
+        customerList.add(new Customer(1,0,"Mo'men Shaheen","01020118856","","El Zraa","Android Developer"));
+        adapter = new CustomerAdapter(getActivity(), customerList);
+        recyclerView.setAdapter(adapter);
     }
 }

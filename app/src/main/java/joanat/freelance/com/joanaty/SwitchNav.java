@@ -3,6 +3,7 @@ package joanat.freelance.com.joanaty;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.FragmentManager;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -13,15 +14,21 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import joanat.freelance.com.joanaty.SellBell.FragmentHome;
+
 public class SwitchNav extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    FragmentManager fragmentManager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_switch_nav);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        fragmentManager = getSupportFragmentManager();
+
+        fragmentManager.beginTransaction().replace(R.id.main_frame, new FragmentHome()).commit();
 
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -73,13 +80,13 @@ public class SwitchNav extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_sell) {
-            // Handle the camera action
+            fragmentManager.beginTransaction().replace(R.id.main_frame, new FragmentHome()).commit();
         } else if (id == R.id.nav_return) {
 
         } else if (id == R.id.nav_customers) {
-
+            fragmentManager.beginTransaction().replace(R.id.main_frame, new joanat.freelance.com.joanaty.Customers.FragmentHome()).commit();
         } else if (id == R.id.nav_admin) {
-
+            fragmentManager.beginTransaction().replace(R.id.main_frame, new joanat.freelance.com.joanaty.Users.FragmentHome()).commit();
         } else if (id == R.id.nav_report_sell) {
 
         } else if (id == R.id.nav_report_return) {
