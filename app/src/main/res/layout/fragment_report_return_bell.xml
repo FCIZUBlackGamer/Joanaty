@@ -20,7 +20,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="فاتوره بيع"
+                android:text="فاتوره مرتجع"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -82,7 +82,7 @@
                     android:textStyle="bold"
                     android:layout_margin="5dp" />
 
-                <AutoCompleteTextView
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
                     android:minWidth="300dp"
@@ -112,19 +112,17 @@
                 android:textStyle="bold"
                 android:layout_margin="5dp" />
 
-            <Button
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
                 android:minWidth="300dp"
                 android:text="20-10-2018"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:background="@android:color/transparent"
                 android:textSize="18sp"
                 android:layout_margin="5dp"/>
 
         </LinearLayout>
-
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -244,7 +242,7 @@
             android:orientation="horizontal"
             android:padding="10sp">
 
-            <Button
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="السعر الاجمالى"
@@ -253,7 +251,7 @@
                 android:textSize="20sp"
                 android:layout_margin="5dp" />
 
-            <EditText
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
                 android:minWidth="300dp"
@@ -267,22 +265,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="35dp"
-            android:text="حفظ"
-            android:textSize="24sp"
-            android:layout_marginTop="20dp"
-            android:gravity="center"
-            android:paddingTop="3dp"
-            android:paddingBottom="3dp"
-            android:paddingStart="100dp"
-            android:paddingEnd="100dp"
-            android:background="@color/colorPrimaryDark"
-            android:textColor="#fff"
-            android:layout_gravity="center_horizontal"/>
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="35dp"
-            android:text="حفظ و طباعة"
+            android:text="طباعة"
             android:textSize="24sp"
             android:layout_marginTop="20dp"
             android:gravity="center"

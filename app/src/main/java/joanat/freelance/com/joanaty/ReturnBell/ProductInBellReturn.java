@@ -1,14 +1,14 @@
-package joanat.freelance.com.joanaty.SellBell;
+package joanat.freelance.com.joanaty.ReturnBell;
 
-public class ProductInBellSell {
+public class ProductInBellReturn {
     int Id, amount, barcode;
     float price, discount, total;
     String name, sell_type;
 
-    public ProductInBellSell() {
+    public ProductInBellReturn() {
     }
 
-    public ProductInBellSell(int id, String name) {
+    public ProductInBellReturn(int id, String name) {
         Id = id;
         this.name = name;
     }

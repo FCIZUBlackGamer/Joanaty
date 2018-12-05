@@ -20,7 +20,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="فاتوره بيع"
+                android:text="فاتوره مرتجع"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -82,7 +82,7 @@
                     android:textStyle="bold"
                     android:layout_margin="5dp" />
 
-                <AutoCompleteTextView
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
                     android:minWidth="300dp"
@@ -112,19 +112,17 @@
                 android:textStyle="bold"
                 android:layout_margin="5dp" />
 
-            <Button
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
                 android:minWidth="300dp"
                 android:text="20-10-2018"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:background="@android:color/transparent"
                 android:textSize="18sp"
                 android:layout_margin="5dp"/>
 
         </LinearLayout>
-
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -134,7 +132,7 @@
             <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:stretchColumns="0,1,2,3,4,5,6">
+                android:stretchColumns="0,1,2,3,4,5,6,7">
 
 
                 <TableRow
@@ -149,7 +147,7 @@
                         android:layout_column="0"
                         android:layout_margin="1dp"
                         android:layout_span="1"
-                        android:layout_weight="2"
+                        android:layout_weight="1"
                         android:gravity="center"
                         android:text="الباركود"
                         android:textColor="@color/white"
@@ -221,6 +219,17 @@
                         android:textColor="@color/white"
                         android:textSize="18sp" />
 
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_column="6"
+                        android:layout_span="1"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="إرجاع"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
 
                 </TableRow>
 
@@ -253,7 +262,7 @@
                 android:textSize="20sp"
                 android:layout_margin="5dp" />
 
-            <EditText
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
                 android:minWidth="300dp"

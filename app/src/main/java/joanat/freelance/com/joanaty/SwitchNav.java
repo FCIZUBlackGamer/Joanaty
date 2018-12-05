@@ -80,16 +80,18 @@ public class SwitchNav extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_sell) {
-            fragmentManager.beginTransaction().replace(R.id.main_frame, new FragmentHome()).commit();
+            fragmentManager.beginTransaction().replace(R.id.main_frame, new joanat.freelance.com.joanaty.SellBell.FragmentHome()).commit();
         } else if (id == R.id.nav_return) {
-
+            fragmentManager.beginTransaction().replace(R.id.main_frame, new joanat.freelance.com.joanaty.ReturnBell.FragmentHome()).commit();
         } else if (id == R.id.nav_customers) {
             fragmentManager.beginTransaction().replace(R.id.main_frame, new joanat.freelance.com.joanaty.Customers.FragmentHome()).commit();
         } else if (id == R.id.nav_admin) {
             fragmentManager.beginTransaction().replace(R.id.main_frame, new joanat.freelance.com.joanaty.Users.FragmentHome()).commit();
         } else if (id == R.id.nav_report_sell) {
+            fragmentManager.beginTransaction().replace(R.id.main_frame, new joanat.freelance.com.joanaty.SaildReport.FragmentHome()).commit();
 
         } else if (id == R.id.nav_report_return) {
+            fragmentManager.beginTransaction().replace(R.id.main_frame, new joanat.freelance.com.joanaty.ReturnedReport.FragmentHome()).commit();
 
         }
 

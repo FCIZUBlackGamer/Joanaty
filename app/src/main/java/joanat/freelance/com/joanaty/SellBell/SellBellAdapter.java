@@ -65,7 +65,7 @@ public class SellBellAdapter extends RecyclerView.Adapter<SellBellAdapter.Vholde
         holder.total.setText(agents.get(position).getTotal() + "");
         holder.discount.setText(agents.get(position).getDiscount() + "");
         holder.amount.setText(agents.get(position).getAmount() + "");
-        holder.sell_type.setSelection(agents.get(position).getSell_type()+1);
+
 
         holder.barcode.setOnClickListener(new View.OnClickListener() {
             @Override
